@@ -1,0 +1,1 @@
+alert("welcome to sigma web development and my 1st website.")
