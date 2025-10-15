@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(8, 0, 0);
+}
+body{
+    color: rgb(237, 237, 229);
+}
+p{
+    background-color: rgb(112, 44, 88);
+}
+a{
+    background-color: rgb(246, 238, 243);
+}
+span{
+    background-color: rgb(111, 89, 206);
+}
+div{
+    background-color: rgb(61, 49, 157);
+}
+h2{
+    background-color: rgb(114, 114, 26);
+}
+section{
+    background-color: rgb(41, 68, 59);
+}
+table{
+    background-color: blueviolet;
+}
+input{
+    background-color: rgb(75, 49, 115);
+}
