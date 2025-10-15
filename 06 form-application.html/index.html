@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form – Let's Learn It</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form to Apply for Sigma Web Development Learning Partner (LP)</h1>
+
+    <form action="#" method="post">
+        <div>
+            <label for="username">Enter your username</label><br>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+        </div>
+
+        <div>
+            <label for="fathername">Enter your father's name</label><br>
+            <input type="text" name="fathername" id="fathername" placeholder="Enter your father's name" autofocus>
+        </div>
+
+        <div>
+            <label for="mothername">Enter your mother's name</label><br>
+            <input type="text" name="mothername" id="mothername" placeholder="Enter your mother's name">
+        </div>
+
+        <div>
+            <label for="college">Enter your college name</label><br>
+            <input type="text" name="college" id="college" placeholder="Enter your college name">
+        </div>
+
+        <div>
+            <label for="age">Enter your age</label><br>
+            <input type="number" name="age" id="age" placeholder="Enter your age">
+        </div>
+
+        <div>
+            <p>Enter your gender:</p>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment:</label><br>
+            <textarea style="color: rgb(4, 0, 255);" id="comment" name="comment" rows="5" cols="50"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div>
+            <label for="subject">Select your favourite subject:</label><br>
+            <select name="subject" id="subject">
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="programming">Programming</option>
+                <option value="electronics">Electronics</option>
+                <option value="electrical">Electrical</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
