@@ -1,0 +1,28 @@
+aside{
+    width: 30%;
+    background-color: dimgray;
+    float: left;
+    border: 1px solid black;
+    margin-left: 1px;
+
+    padding: 1px;
+}
+/* article{
+    width: 50%;
+    background-color: cadetblue;
+    float: left;
+    border: 1px solid black;
+    margin-left: 10px;
+    padding: 10px;
+}
+figure{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+figcaption{
+    text-align: center;
+} */
+img{
+    width: 100%; 
+}
