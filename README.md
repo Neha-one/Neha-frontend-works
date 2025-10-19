@@ -9,7 +9,7 @@ Each file focuses on different HTML tags, layouts, and creative ideas.
 
 | No. | File Name / Project | Description |
 |-----|---------------------|--------------|
-| 1️⃣ | **media-showcase** | Displays 6 audio and 6 video files with `<audio>` and `<video>` tags. My first mini project. |
+| 1 | **media-showcase** | Displays 6 audio and 6 video files with `<audio>` and `<video>` tags. My first mini project. |
 | 2️⃣ | **html-tags-practice** | Practice file showing use of entities, `<pre>`, `<blockquote>`, `<q>`, `<code>`, and more HTML basics. |
 | 3️⃣ | **headings-paragraphs** | Practicing headings (`<h1>`–`<h6>`) and paragraph structuring. |
 | 4️⃣ | **lists-practice** | Tried ordered, unordered, and nested lists. |
