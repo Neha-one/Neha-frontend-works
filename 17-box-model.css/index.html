@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+
+    <style>
+        /*  UNIVERSAL SELECTOR */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  BASE BOX STYLE */
+        .box {
+            background-color: rgb(157, 175, 155);
+        }
+
+        /*  BOX 1 — Shows margin & padding */
+        .box1 {
+            height: 200px;
+            border: 3px solid black;
+            margin: 40px;
+            padding: 10px;
+            color: rgb(248, 4, 4);
+        }
+
+        /*  BOX 2 — Demonstrates margin collapse */
+        .box2 {
+            height: 200px;
+            border: 3px solid rgb(3, 15, 244);
+            margin: 20px;
+            padding: 10px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box.</div>
+    <div class="box box2">I am another box.</div>
+</body>
+
+</html>
