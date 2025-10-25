@@ -1,0 +1,89 @@
+<!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraph. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. Do not change this html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quize</title>
+    <style>
+        * {
+            font-family: cursive;
+            font-size: small;
+            font-weight: 20;
+            font-style: italic;
+            text-transform: capitalize;
+            /* word-spacing: 2px; */
+            letter-spacing: 1px;
+            padding: 0px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        p:first-child {
+            background-color: yellow;
+            color: red;
+            border: 2px solid blue;
+            border-style: dotted;
+        }
+
+        .mani {
+            background-color: blue;
+            color: white;
+            border: 2px solid yellow;
+            border-style: dotted;
+
+
+        }
+
+        p:hover {
+            text-transform: uppercase;
+            color: black;
+            background-color: azure;
+
+        }
+
+        p:active {
+            color: rgb(164, 0, 0);
+            text-transform: lowercase;
+        }
+
+        /* this selector use to apply property on given particular child. */
+        div p:nth-child(5) {
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt magni maxime atque ipsam quo
+            minus facilis, accusamus, accusantium harum cumque eos reprehenderit enim nesciunt? Dolore maxime quod
+            laboriosam id.
+        </p>
+
+        <p class="mani">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero eos incidunt explicabo quo voluptates. Eius
+            cumque minus rem aliquid harum?
+
+        <p class="mani">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint reiciendis animi, amet enim quasi
+            quaerat quibusdam! Illum praesentium aliquid vitae, eum eius repellat ut!
+        </p>
+        <p class="mani">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corrupti, vitae impedit nulla doloribus
+            maiores quo sed ipsum ab cupiditate rerum! Accusamus, aperiam. Vel tenetur id nobis cupiditate fugiat
+            molestias.
+        </p>
+        <p class="mani">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus inventore quidem odit vero laborum
+            vel, optio voluptatum tempora iusto natus reiciendis molestias illo iure voluptatem, ipsum deleniti, rem
+            fugit libero quia. Mollitia, voluptates eligendi.
+        </p>
+    </div>
+</body>
+
+</html>
