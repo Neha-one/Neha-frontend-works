@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        /* the specificity of this selector is 10 */
+
+        .non {
+            background-color: blue;
+        }
+
+        /* the specificity of this selector is 100 */
+
+        /* #ans{
+            background-color: red;
+        } 
+         */
+
+
+        /* the specificity of this selector is 10
+        .sam {
+            background-color: blueviolet !important;
+        } */
+
+
+        /* the specificity of this selector is 1+10=11 */
+
+        h1.mani {
+            background-color: aqua;
+        }
+
+        /*this is example of attribute selector, the specificity of this selector is 10 */
+        [data=a] {
+            background-color: pink;
+        }
+
+        /* the specificity of this selector is 1 */
+
+        h1 {
+            background-color: darkgoldenrod;
+        }
+
+        /* the specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41
+                
+                a=element selector
+                webdev=class selector
+                neha-kumari=class selector 
+                [href]=attribute selector 
+                :hover=pseudo class selector  */
+
+        a.webdev.neha-kumari[href]:hover {
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>CSS Specificity</h2>
+    <p>
+    <ul>
+        <li type="circle">cascade algorithms</li>
+    </ul>
+    <ol>
+        <li>
+            position & order of appearance for same type of selectors.
+            ( if we write same type of class or id then last option will be followed.)
+        </li>
+        <li>
+            Specificity [inline style > ID selectors > class sele & attributes sele > elements sele > universal sele]
+        </li>
+        <li>origin( the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a
+            browser extension, or your authored CSS)</li>
+        <li>Importance (some CSS rules are weighted more heavily than others, especially with the !important rule type,
+            it is can overwrite the inline style)</li>
+    </ol>
+    </p>
+
+
+    start from here....applying methods....
+    <h1 id="ans" class="mani non sam" data="a">Neha Kumari baranwal</h1>
+    <a class="webdev neha-kumari" href="https://www.google.com">open google</a>
+</body>
+
+</html>
