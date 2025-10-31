@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list1 {
+            /* none will be remove marker */
+            list-style: none;
+        }
+
+        .list2 {
+            /* other option to add new as a marker */
+            list-style: devanagari;
+        }
+
+        .list3 {
+            /* after using list-style-position we are able to add background color on marker.*/
+            list-style-position: inside;
+            background-color: aqua;
+        }
+
+        .list4 {
+            list-style-position: inside;
+
+            list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSIYfofMd15nCQp--fGchfWa7Z6hwktGSgA&s);
+
+            /* list-style: disc inside
+             url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSIYfofMd15nCQp--fGchfWa7Z6hwktGSgA&s); */
+            border: 2px solid black;
+            padding: 0px;
+        }
+
+        .list5 {
+            list-style-type: "❤️";
+            border: 2px solid black;
+            list-style-position: inside;
+
+            padding: 0px;
+        }
+
+        .list6 {
+            display: flex;
+            padding: 23px;
+            list-style: none;
+            gap: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="list1">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="list2">
+            <li>Neha</li>
+            <li>Kumari</li>
+            <li>Baranwal</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="list3">
+            <li>mani</li>
+            <li>good</li>
+            <li>person</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="list4">
+            <li>Pro</li>
+            <li>Web</li>
+            <li>Developer</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="list5">
+            <li>Replit</li>
+            <li>for</li>
+            <li>Phone</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="list6">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
