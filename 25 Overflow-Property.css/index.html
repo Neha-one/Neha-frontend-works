@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property </title>
+    <style>
+        .box {
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid black;
+
+            text-overflow: clip;
+            overflow: hidden;
+
+            /* overflow: scroll scroll; */
+            /* overflow: auto; */
+            /* overflow-x: hidden;
+            overflow-y: auto; */
+            /* overflow: hidden auto; */
+            /* overflow: auto hidden; */
+            /* overflow: scroll hidden; */
+            overflow: hidden auto;
+
+            /* nowrap will do that text move toward x-axis and doesn't jump to next line. */
+            /* white-space:nowrap; */
+
+        }
+
+        /* my practice. */
+        p {
+            width: 30vw;
+            height: 40vh;
+            border: 3px solid black;
+            /* text-overflow: ellipsis;*/
+            /* text-overflow: clip;
+            overflow: hidden; */
+            /* overflow: auto; */
+            /* white-space: nowrap; */
+            /* overflow: scroll;
+            overflow: auto; */
+            /* overflow-x: scroll; */
+            /* overflow-y: hidden; */
+            overflow: hidden scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        hii i am a good box and i like to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum
+        eveniet necessitatibus! Quaerat molestias nisi, doloremque veritatis iste beatae, ex architecto tempora esse
+        reprehenderit possimus illo. Repellat, unde repellendus voluptas placeat aspernatur consectetur architecto.
+    </div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eaque eum, delectus vitae iure itaque totam
+        molestias. Harum hic ipsam voluptatem neque modi laboriosam officiis, optio voluptates ab doloremque quasi
+        fugiat sequi nisi quo expedita enim natus repellendus ratione a. Suscipit, accusamus. Libero, blanditiis quas.
+    </p>
+</body>
+
+</html>
