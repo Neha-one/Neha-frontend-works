@@ -1,0 +1,60 @@
+<!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraph. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. Do not change this html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quize</title>
+    <style>
+        /* p{
+            background-color: blue;
+            color: white;
+        }
+        div p:first-child{
+            background-color: yellow;
+            color: red;
+        } */
+
+
+        /* or */
+
+        /* div p {
+            background-color: yellow;
+            color: red;
+        }
+
+        div p:nth-child(2) {
+            background-color: blue;
+            color: white;
+        } */
+
+        /* or */
+
+        div p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+
+        div P:not(:first-child) {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur possimus harum.</p>
+        <p>web developer</p>
+        <p>i am doing my quick quize</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur possimus harum.</p>
+        <p>web developer</p>
+        <p>i am doing my quick quize</p>
+    </div>
+
+</body>
+
+</html>
