@@ -1,0 +1,37 @@
+/* GLOBAL VARIABLE */
+:root {
+    --color: rgb(120, 120, 225);
+    --seccolor: rgb(66, 66, 190);
+    --defpad: 34px;
+    --defop: 0.4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    background-color: var(--color);
+}
+
+.box2 {
+    background-color: var(--seccolor);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    border: 2px solid var(--seccolor);
+}
+
+ul li:first-child {
+    /* overwrite of global variable */
+    --color: rgb(232, 65, 56);
+    background-color: var(--color, rgb(255, 183, 195));
+}
