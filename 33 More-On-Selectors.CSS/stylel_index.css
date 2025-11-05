@@ -1,0 +1,31 @@
+        .box:nth-child(1) {
+            background-color: aquamarine;
+        }
+
+        /* WE CAN ADD CONTENT IN CSS USING DYNAMICALLY SELECTORS. */
+        /* BUT WE CANN'T SELECT THEM. */
+        .boxes::after {
+            content: "web dev course is usefull";
+            color: red;
+        }
+
+        .boxes::before {
+            content: "hii it's Neha.";
+            color: rgb(0, 255, 34);
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        ::first-letter {
+            color: peru;
+            font-size: 34px;
+            text-transform: uppercase;
+        }
+
+        input::placeholder {
+            color: darkcyan;
+            background-color: bisque;
+        }
