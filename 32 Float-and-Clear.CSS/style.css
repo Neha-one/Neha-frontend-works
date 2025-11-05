@@ -1,0 +1,22 @@
+ body {
+     /* i apply this for my eye confort. */
+     background-color: rgb(56, 49, 49);
+ }
+
+ img {
+     float: left;
+ }
+
+ .cards {
+     border: 2px solid black;
+     display: flow-root;
+ }
+
+ .card {
+     border: 2px solid yellow;
+ }
+
+ .card:nth-child(2) {
+     background-color: aqua;
+     clear: left;
+ }
