@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: rgb(168, 136, 198);
+
+}
+
+.box1 {
+    border: 2px solid black;
+    background-color: rgb(104, 159, 173);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: rotate(45deg);
+    /* transform: rotatex(70deg); */
+    /* transform: rotatey(50deg); */
+    /* transform: rotatez(44deg); */
+    /* transform: rotate(0.25turn); */
+}
+
+.box2 {
+    border: 2px solid black;
+    background-color: rgb(196, 53, 196);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*IN SCALE IT MAKES BIGGER THAT MUCH TIMES. */
+    /* transform: scale(2); */
+    transform: scalex(3);
+    /* transform: scaley(1.5); */
+}
+
+.box3 {
+    border: 2px solid black;
+    background-color: rgb(65, 65, 177);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* SKEW NOT APPLY WITH Z-AXIS */
+    /* transform: skew(69deg); */
+    /* transform: skewx(34deg); */
+    transform: skewY(47deg);
+}
+
+.box4 {
+    border: 2px solid black;
+    background-color: rgb(189, 130, 41);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* IN TRANSLATE-X IT MOVE ITSELF ACCORDING TO ITS X-AXIS LENGTH OR WIDTH. */
+    transform: translate(33px);
+    /* transform: translateX(100%); */
+    /* IN TRANSLATE-Y IT MOVE ITSELF ACCORDING TO ITS Y-AXIS LENGTH OR HEIGHT. */
+    /* transform: translateY(100%); */
+    /* transform:translateX(30%) translateY(100%) skew(45deg); */
+    /* IF WE HAVE TO HIDE THE NAV BAR SO WE HAVE TO TRY THIS. */
+    /* transform: translateX(-100%); */
+    /* OR */
+    /* transform: translateY(-100%); */
+    /* or */
+    /* transform: translate(-100%); */
+}
+
+.box5 {
+    border: 2px solid black;
+    background-color: rgb(26, 169, 112);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* MATRIX IS COMBINATION OF SCALE + SKEW + TRANSLATE. */
+    transform: matrix(1.2, 0.2, 0.5, 0.5, 0, 0);
+}
+
+.box6 {
+    border: 2px solid black;
+    background-color: rgb(175, 175, 31);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+}

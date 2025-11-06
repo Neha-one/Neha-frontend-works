@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.box {
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 100px;
+    background-color: rgb(146, 229, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.scale:hover {
+    transform: scale(1.5);
+    background-color: rgb(94, 215, 231);
+}
+
+.scaleX:hover {
+    transform: scaleX(1.5);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.scaleY:hover {
+    transform: scaleY(1.5);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.translateX:hover {
+    transform: translateX(50%);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.translateY:hover {
+    transform: translateY(50%);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.translate:hover {
+    transform: translate(50%);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.matrix:hover {
+    transform: matrix(1.2, 0.2, 0.5, 0.5, 0, 0);
+    background-color: rgb(94, 215, 231);
+
+}
+
+.rotate:hover {
+    transform: rotate(90deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.rotateY:hover {
+    transform: rotateY(90deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.rotateX:hover {
+    transform: rotateX(90deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.skew:hover {
+    transform: skew(45deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.skewX:hover {
+    transform: skewX(45deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.skewY:hover {
+    transform: skewY(45deg);
+    background-color: rgb(94, 215, 231);
+}
+
+.matrix3d:hover {
+    transform: matrix3d(1.2, 0.2, 0.5, 0.5, 0, 0);
+    background-color: rgb(94, 215, 231);
+}
+
+.translateZ:hover {
+    transform: translateZ(45px);
+    background-color: rgb(94, 215, 231);
+}
+
+.translate3d:hover {
+    transform: translate3d(45px 33px 33px);
+    background-color: rgb(94, 215, 231);
+}
