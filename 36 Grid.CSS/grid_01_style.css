@@ -1,0 +1,40 @@
+/* DON'T USE PADDING IN GRID AND FLEX-BOX JUST USE GAP PROPERTY. */
+
+body {
+    background-color: rgb(74, 65, 53);
+}
+
+.container {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: [neha] 100px [mani] 50px [bittu] 40px;
+    grid-template-rows: [sam] 100px [mahak] 100px [som] 100px;
+
+}
+
+.item {
+    border: 2px solid black;
+    width: 23px;
+    height: 23px;
+    margin: 2px;
+
+}
+
+.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item-5 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item-7 {
+    grid-column: neha/bittu;
+    grid-row: sam/som;
+}
