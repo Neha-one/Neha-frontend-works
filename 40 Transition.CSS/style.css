@@ -1,0 +1,25 @@
+.container {
+    background-color: rgb(180, 82, 82);
+    width: 40vw;
+    height: 34vh;
+}
+
+.box {
+    background-color: blue;
+    width: 4vw;
+    height: 3vh;
+    /* transition-property: transform;
+            transition-property: all;
+            transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+    /* ALL IN ONE LINE */
+    transition: all 2s cubic-bezier(1, -0.56, 0.97, 1.51) 1s;
+}
+
+.translate:hover {
+    transform: translateX(10vw) translateY(10vh) scale(2);
+    background-color: red;
+
+}
