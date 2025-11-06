@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .icon img {
+    height: 45px;
+}
+
+nav ul {
+    display: flex;
+    gap: 44px;
+    cursor: pointer;
+    align-items: center;
+
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li .box1 {
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 9px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+.box1:hover {
+    color: rgb(92, 88, 88);
+    border-color: rgb(92, 88, 88);
+}
+
+nav ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+}
+
+.icon-2 {
+    width: 23px;
+    height: 23px;
+    margin: 9px;
+}
+
+nav ul li span a {
+    text-decoration: none;
+    color: black;
+
+}
+
+main {
+    margin: 44px;
+    padding: 23px;
+}
+
+main ul li {
+    color: black;
+    font-size: 34px;
+}
+
+main ul {
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+main ul li {
+    font-size: 45px;
+
+}
+
+main ul .download-h {
+    font-weight: bold;
+}
+
+main p {
+    margin: 33px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul.box-text {
+    background-color: darkblue;
+    font-size: 23px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+footer ul li {
+    font-size: 13px;
+    font-family: "Kanit", sans-serif;
+    background-color: rgb(2, 169, 191);
+    border-radius: 7px;
+    padding: 11px;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul .sky-box:hover {
+    background-color: rgb(2, 139, 157);
+    transition: 0.5s;
+}
+
+.for-logowithtext {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 200px;
+
+
+}
+
+.for-logowithtext img {
+    margin-right: 13px;
+
+}
