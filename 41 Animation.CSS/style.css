@@ -1,0 +1,64 @@
+.container {
+    background-color: blueviolet;
+    width: 45vw;
+    height: 35vh;
+}
+
+.box {
+    /* background-color: violet; */
+    width: 7vw;
+    height: 3vh;
+    /* animation-name:NehaKaAnimation ;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-delay:2s ;
+            /* animation-direction: alternate; */
+    /* animation-play-state: running; */
+    /* WILL BE PAUSED WHETHER THE BOX IS SHOW */
+    /* animation-play-state: paused; */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: NehaKaAnimation 3s ease-in-out 3s 1 backwards ; */
+    /* WHEN WE APPLY FORWARDS SO AFTER DELAY TIMING THE background-color WILL BE APPEAR. */
+    animation: NehaKaAnimation 3s ease-in-out 2s 1 forwards,
+        NEHA2 3s ease-in-out 3s 1;
+
+}
+
+@keyframes NehaKaAnimation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes NEHA2 {
+    0% {
+        transform: rotate(100deg);
+    }
+
+    20% {
+        transform: rotate(200deg);
+
+    }
+
+    50% {
+        transform: rotate(220deg);
+
+    }
+
+    80% {
+        transform: rotate(300deg);
+
+    }
+
+    100% {
+        transform: rotate(310deg);
+
+    }
+}
