@@ -1,0 +1,43 @@
+.container {
+    /* background-color: rgb(77, 59, 93); */
+    border: 7px solid black;
+    width: 666px;
+    height: 666px;
+    background-image: url(https://photographyreal.com/wp-content/uploads/2024/03/Post-Processing-for-Editorial-Images.jpg);
+    /* background-position: bottom right; */
+    background-position: center center;
+
+    /* IF IMAGE WILL SMALL THAN BACKGROUND SIZE THEN IT REPEATS ITSELF. */
+    /* background-image: url(https://img.freepik.com/premium-photo/awesome-view-river-sky_954226-164279.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+    /* the background covers the entire box including the border area. */
+
+    /* border-box → background goes behind border + padding + content. */
+    /* background-clip: border-box; */
+
+    /* padding-box → background stops at border, only covers padding + content (not under border). */
+    /* background-clip: padding-box; */
+
+    /* content-box → background only covers content, not padding, not border. */
+    /* background-clip: content-box; */
+}
+
+.image {
+    width: 444px;
+    height: 333px;
+
+    object-fit: cover;
+    /* object-position: top right; */
+
+    /* object-position: 10px 20px; */
+
+    /* object-fit: contain; */
+
+    /* object-fit: fill; */
+
+    /* If the image is larger → it will behave like contain and scale down. */
+    /* object-fit: scale-down; */
+}
