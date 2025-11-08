@@ -1,0 +1,63 @@
+.img1 {
+    display: flex;
+    clear: right;
+    margin: 23px;
+
+    /* contrast → more/less difference between dark & light. */
+
+    /* filter: contrast(9); */
+    /* filter: contrast(222%); */
+
+    /* hue-rotate → shift all colors around. */
+    filter: hue-rotate(454deg);
+}
+
+.img2 {
+    width: 444px;
+    display: flex;
+    clear: right;
+    margin: 23px;
+
+    /* brightness → make lighter or darker. */
+    /* filter: brightness(222%); */
+
+    /* saturate → make colors stronger or weaker. */
+    filter: saturate(500%);
+}
+
+.img3 {
+    display: flex;
+    clear: right;
+    margin: 23px;
+
+    /* blur → make image fuzzy. */
+    /* filter: blur(0.9px); */
+
+    /* opacity → transparency level. */
+    filter: opacity(0.5);
+}
+
+.img4 {
+    display: flex;
+    clear: right;
+    margin: 23px;
+
+    /* grayscale → black & white effect. */
+    /* filter: grayscale(100%); */
+
+    /* invert → opposite colors. */
+    filter: invert(1);
+}
+
+.img5 {
+    width: 444px;
+    display: flex;
+    clear: right;
+    margin: 23px;
+
+    /* sepia → old brown photo look. */
+    /* filter: sepia(100%); */
+
+    /* drop-shadow → shadow behind. */
+    filter: drop-shadow(10px 5px 60px red);
+}
