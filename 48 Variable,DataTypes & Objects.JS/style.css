@@ -1,0 +1,13 @@
+h1 {
+    background-color: firebrick;
+    color: aqua;
+}
+
+body {
+    background-color: azure;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
