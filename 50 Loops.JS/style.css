@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: chocolate;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+li {
+    color: darkblue;
+}
