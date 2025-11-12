@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Conditional Statement</h1>
+    <ul>
+        <li>if else</li>
+        <li>switch</li>
+    </ul>
+    <!-- SWITCH STATEMENT -->
+    <section>
+        <h1>What is a switch?</h1>
+        <ul>
+            <li>A switch is like a cleaner version of multiple if...else if...else.</li>
+            <li>It checks one value against multiple possible cases.</li>
+            <li>When a match is found, the corresponding block of code runs.</li>
+        </ul>
+        <h2>Example 1: Day of the Week</h2>
+        <p>let day = 3;
+
+            switch (day) {
+            case 1:
+            console.log("Monday");
+            break;
+            case 2:
+            console.log("Tuesday");
+            break;
+            case 3:
+            console.log("Wednesday");
+            break;
+            case 4:
+            console.log("Thursday");
+            break;
+            case 5:
+            console.log("Friday");
+            break;
+            case 6:
+            console.log("Saturday");
+            break;
+            case 7:
+            console.log("Sunday");
+            break;
+            default:
+            console.log("Invalid day");
+            }
+        </p>
+        <h4>Output: Wednesday</h4>
+        <h2>🔹 Example 2: Calculator</h2>
+        <p>let operator = "+";
+            let num1 = 10, num2 = 5;
+
+            switch (operator) {
+            case "+":
+            console.log(num1 + num2);
+            break;
+            case "-":
+            console.log(num1 - num2);
+            break;
+            case "*":
+            console.log(num1 * num2);
+            break;
+            case "/":
+            console.log(num1 / num2);
+            break;
+            default:
+            console.log("Invalid operator");
+            }
+        </p>
+        <h3>👉 Output: 15</h3>
+        <h2>🔹 Key Points</h2>
+        <ol>
+            <li>switch checks value strictly (===) → type must match.</li>
+            <li>break is important → without it, code will fall through into the next case.</li>
+            <li>default runs if no case matches (like else).</li>
+        </ol>
+        <dl>
+            <dt>✅ In one line:</dt>
+            <dd>A switch statement lets you compare one value against multiple cases more cleanly than many if...else
+                statements.</dd>
+        </dl>
+        <h2>🔹 Example: Vowels Check</h2>
+        <p>let letter = "a";
+
+            switch (letter) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+            console.log(letter + " is a vowel");
+            break;
+            default:
+            console.log(letter + " is a consonant");
+            }
+        </p>
+        <h3>output:- a is a vowel
+        </h3>
+        <p>🔹 How it works?
+
+            If letter is "a", it matches case "a".
+
+            Since there’s no break, execution falls through the next cases until it finds a break.
+
+            So "a", "e", "i", "o", "u" all run the same block.
+
+            ✅ This is useful when many cases should do the same action.</p>
+    </section>
+    <script src="index.js"></script>
+    <!-- <script src="pra.js"></script> -->
+    <!-- <script src="practice.js"></script> -->
+    <!-- <script src="switch.js"></script> -->
+</body>
+
+</html>

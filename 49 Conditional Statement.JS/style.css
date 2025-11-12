@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(2, 60, 118);
+}
+
+body {
+    background-color: cadetblue;
+}
+
+h2 {
+    color: rgb(41, 41, 164);
+}
