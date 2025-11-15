@@ -1,0 +1,10 @@
+h1 {
+    color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: fuchsia;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>FACTORIAL</h1>
+    <!-- Write a progrma to calculate factorial of a number using reduce and using for loops  -->
+
+    <script>
+        // //USING FOR LOOP:-
+        // let fact = 1
+        // for (let i = 1; i <= 5; i++) {
+        //     fact = fact * i;
+        // }
+        // console.log(fact)
+
+
+
+        // //USING REDUCE METHOD:-
+
+        // // create a array
+        let arr = [1, 2, 3, 4, 5]
+
+        // create a function for calculation so that we can apply reduce()
+        const cal = (a, b) => {
+            return a * b
+        }
+        console.log(arr.reduce(cal))         //15
+
+        // // give it a fixed initial accumulator
+        console.log(arr.reduce(cal, 10))         //25
+        // //here 10 is fixes as a initial value so that calculation start from 10
+        // //10 * 1= 10
+        // //10 * 2= 20
+        // //20 * 3= 60
+        // //60 * 4= 240
+        // //240 * 5= 1200
+
+
+        // //SHORT METHODE:-
+        // //But we can also apply sortest method for find out the sum/multiplication of arrays elements:-
+        arr1 = [1, 2, 3, 4]
+        // //without creating another function for calculation :-
+        console.log(arr1.reduce((a, b) => a * b))    //24
+
+
+        //SHORTEST METHODE:-
+        //without creating any arrays and function.
+
+        console.log([1, 2, 3, 4, 5].reduce((a, b) => a * b))        //120
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
