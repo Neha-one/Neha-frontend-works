@@ -1,0 +1,39 @@
+.box {
+    height: 44px;
+    width: 44px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.team {
+    height: 5vh;
+    width: 22vw;
+    border: 2px solid black;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 139, 0.689);
+    color: rgb(225, 255, 0);
+    margin: 5px;
+
+}
+
+;
+
+.ptag {
+    color: darkblue;
+    background-color: aquamarine;
+    font-size: large;
+}
+
+.mani {
+    background-color: gray;
+    color: wheat;
+}
+
+.newclass {
+    background-color: orange;
+    color: black;
+}
