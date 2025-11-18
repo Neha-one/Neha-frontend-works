@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 6px solid rgba(235, 233, 233, 0.667);
+    /* background-image: url(download.jpg);
+            background-size: cover;
+            background-position: center; */
+    width: 777px;
+    height: 122px;
+    padding: 66px;
+    margin: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    text-shadow: 44px 33px 4px rgb(125, 41, 126);
+    box-shadow: 44px 33px 22px rgba(101, 96, 188, 0.345);
+    font-size: 33px;
+    background-color: rgba(133, 127, 255, 0.345);
+    color: rgb(95, 13, 96);
+
+}

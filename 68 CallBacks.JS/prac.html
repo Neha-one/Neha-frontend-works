@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practices</title>
+</head>
+
+<body>
+    <script>
+        //                  easy method:-
+        function hello() {
+            console.log('hello Neha');
+        }
+        setTimeout(hello, 2000);
+
+        //direct using arrow function:-
+        //in this never wait for print hello means it follows asynchronous method:-
+
+        console.log('one');
+
+        setTimeout(() => {
+            console.log('hello');
+        }, 6000);
+        setTimeout(() => {
+            console.log('neha 2');
+
+        }, 2000)
+        console.log('two');
+        console.log('three');           //one two three neha2 hello
+
+        //                                                  ----CALLBACKS---  
+        // //                      EXAMPLE 01:-
+        // //EXPLAINATION
+
+        // // after creating hello function
+        // // call hello fun and give it goodbye argument.
+
+        // hello(goodbye);
+
+        // //here callback=goodbye
+        // function hello(callback) {
+        //     console.log('hello');
+        //     //call callback = call goodbye fun.
+        //     //by short :- callback()==goodbye()
+        //     callback();
+        // };
+        // function goodbye() {
+        //     console.log('goodbye');
+        // };
+
+
+        // //                      EXAMPLE 02:-
+        // function sum(a, b) {
+        //     console.log(a + b);
+        // }
+
+        // function calculator(a, b, SumCal) {
+        //     //SumCal(a,b) == sum(a,b)
+        //     SumCal(a, b);
+        // }
+        // calculator(3, 4, sum);
+
+
+        // //                      EXAMPLE:-03
+        // function fact(a, b) {
+        //     console.log(a * b);
+        // }
+
+        // function Calculate(a, b, factCal) {
+        //     factCal(a, b)
+        // }
+        // Calculate(4, 5, fact)
+
+
+        // //                      EXAMPLE 04:-
+        // function student(name) {
+        //     console.log(name);
+        // }
+        // function print(name, callback) {
+        //     callback(name)
+        // }
+        // print("neha", student);
+
+
+        // //                      EXAMPLE 05:-
+
+        // function print(name, callback) {
+        //     callback(name)
+        // }
+        // //here callback(name) = (name) => {
+        // // console.log(name);
+        // // }
+
+        // print("neha", (name) => {
+        //     console.log(name);
+        // });
+
+
+        // //                      EXAMPLE 06:-
+        // // NESTED HELL:-
+        // function getData(dataId, getNextData) {
+
+        //     setTimeout(() => {
+        //         console.log('data', dataId);
+        //         if (getNextData) {
+
+        //             getNextData();
+        //         }
+        //     }, 1000)
+
+        // }
+        // getData(1, () => {
+        //     console.log('getting data2....');
+
+        //     getData(2, () => {
+        //         console.log('getting data3....');
+
+        //         getData(3, () => {
+        //             console.log('getting data4....');
+
+        //             getData(4)
+        //         })
+        //     })
+        // });
+
+
+        //                      EXAMPLE 07:-
+
+        // function getsum(a, b, getNextsum) {
+
+        //     setTimeout(() => {
+        //         console.log(a + b);
+
+        //         if (getNextsum) {
+
+        //             getNextsum()
+        //         }
+        //     }, 1000);
+        // }
+        // getsum(1, 3, () => {
+        //     getsum(4, 5);
+        // })
+
+
+
+        // //                      EXAMPLE 08:-
+
+        // function getdata(username, age, email) {
+        //     setTimeout(() => {
+        //         console.log(`username is ${username} , age is ${age} and email is ${email}`);
+        //     });
+        // }
+        // getdata("Neha", 19, "neha@123gmail.com")
+
+        // //               or  one by one
+
+        // function getdata(username, callback) {
+
+        //     setTimeout(() => {
+        //         callback()
+        //         console.log(`username is ${username}`);
+        //     }, 1000);
+        // }
+        // function age(ageVal, callback) {
+        //     setTimeout(() => {
+        //         callback()
+        //         console.log(`age is ${ageVal}`);
+        //     }, 1000);
+        // }
+        // function email(emailVal) {
+        //     setTimeout(() => {
+        //         console.log(`email is ${emailVal}`);
+        //     }, 1000);
+        // }
+        // //NESTED heLL:- solutin:-promises
+        // getdata("Neha", () => {
+        //     age(19, () => {
+        //         email("neha@123gmail.com")
+        //     })
+        // });
+
+
+
+        // //                      EXAMPLE 09:-
+
+        // function callback(arg) {
+        //     console.log(arg);
+        // }
+        // const load = (srcN, callback) => {
+        //     setTimeout(() => {
+
+        //         sc = document.createElement("script");
+        //         sc.src = srcN;
+        //         document.body.append(sc);
+        //         sc.onload = () => {
+        //             callback("calling arguments........");
+        //         }
+        //     }, 2000)
+
+        // }
+        // load("Synchronous.js", callback)
+
+
+
+
+        // //                      EXAMPLE 10:-   JUST TRY TO DO SOMETHING😁
+        // function callback(arg) {
+        //     console.log(arg);
+        // }
+        // const loadt = (classN, callback) => {
+        //     let cls = document.createElement("h1");
+        //     cls.class = classN;
+        //     cls.innerHTML = "WEB DEVELOPMENT";
+        //     document.body.append(cls)
+        //     callback("sigma")
+        // }
+        // loadt("mani", callback)
+
+
+
+
+        // //                      EXAMPLE 11:-   JUST TRY TO DO SOMETHING😁
+        // function callback(arg) {
+        //     console.log('Callback says : ', arg);
+
+        // }
+        // const loadN = (imgsrc, callback) => {
+        //     let imgN = document.createElement("img");
+        //     imgN.src = imgsrc
+        //     document.body.append(imgN);
+
+        //     imgN.alt = "photo loaded..";
+
+        //     callback("photo..")
+        // }
+        // loadN("wallpaper3.jpg", callback)
+
+
+
+
+        // //                      EXAMPLE 12:-
+
+        // // Callback function that will be called after the script loads
+        // // It simply prints the argument passed to it
+        // const CallingFunName = (arg) => {
+        //     console.log(arg)
+        // }
+
+
+        // // Function to dynamically load an external JavaScript file
+        // // srcN -> the path/URL of the script to load
+        // // CallingFunName -> the function to call once the script is fully loaded
+        // const loadScriptN = (srcN, CallingFunName) => {
+        //     // Create a new <script> element
+        //     let sc = document.createElement("script");
+        //     // Set the "src" attribute to the given script path
+        //     sc.src = srcN;
+        //     // Add the <script> tag inside the <body>
+        //     // (this makes the browser start loading the script file)
+        //     document.body.append(sc)
+        //     // When the script finishes loading successfully,
+        //     // call the given callback function with the argument "CodeWithNeha"
+
+        //     sc.onload = () => CallingFunName("CodeWithNeha");
+        // }
+        // // Call loadScriptN() to load "Synchronous.js" file which is enternal file.
+        // // and then run CallingFunName() after it finishes loading
+        // loadScriptN("Synchronous.js", CallingFunName);
+
+
+
+
+        // //                      EXAMPLE 13:-
+
+        // //  Now if you read it later, you’ll know=
+
+        // // This code creates a script tag dynamically.
+        // // Adds it into the HTML <body>.
+        // // Waits until the script is fully loaded.
+        // // Then runs a callback function (CallingFunName) with "CodeWithNeha" as argument
+
+        // //          HERE CLEAR CODE
+        // const callbackfun = (arg) => {
+        //     console.log(arg)
+        // }
+
+        // const loadscriptfun = (scrName, callbackfun) => {
+        //     let scriptele = document.createElement("script");
+        //     scriptele.src = scrName;
+        //     document.body.append(scriptele);
+        //     scriptele.onload = () => {
+        //         callbackfun("pizza!");
+        //         alert("the java file (which is enternal or external) executes and then the callback funtion execute. ")
+        //     }
+        // }
+        // loadscriptfun("Synchronous.js", callbackfun);
+
+
+
+
+        // //                      EXAMPLE 14:-
+
+        // // //CALL OF HELL  OR PYRAMID OF DOOM.
+        // const loadfun = (srcN, callback) => {
+        //     let sc = document.createElement("script");
+        //     sc.src = srcN;
+        //     document.body.append(sc);
+        //     sc.onload = () => callback("window")
+        // }
+        // loadfun("Synchronous.js", (arg, fn) => {
+        //     console.log(arg)
+        //     fn("mackbook", () => {
+        //         ddg("seconddarg", () => {
+
+        //         })
+        //     })
+        // });
+
+
+
+
+        // //                      EXAMPLE 15:-
+
+
+        // const fn = () => {
+        //     console.log("burger")
+        // }
+        // const callback = (arg, fn) => {
+        //     console.log(arg);
+        //     fn();
+        // }
+
+    </script>
+</body>
+
+</html>
