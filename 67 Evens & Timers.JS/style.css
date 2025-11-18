@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(0, 0, 0, 0.121);
+}
+
+button {
+    margin: 22px;
+    padding: 11px;
+    border-radius: 19px;
+    border: 2px solid rgba(103, 3, 103, 0.31);
+    color: rgb(103, 3, 103);
+    background-color: rgba(103, 3, 103, 0.215);
+    font-weight: bolder;
+    text-shadow: 1px 1px 9px rgb(103, 3, 103);
+}
+
+.box {
+    font-size: large;
+    color: darkred;
+    font-weight: bold;
+    margin: 13px;
+}
+
+
+
+.child {
+    background-color: rgb(156, 112, 2);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+    cursor: pointer;
+}
+
+
+
+.childcontainer {
+    background-color: rgb(186, 160, 95);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+}
+
+
+
+.container {
+    background-color: rgb(190, 187, 180);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+}
+
+.child2 {
+    background-color: rgb(156, 112, 2);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+    cursor: pointer;
+}
+
+.childcontainer2 {
+    background-color: rgb(186, 160, 95);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+}
+
+.container2 {
+    background-color: rgb(190, 187, 180);
+    border: 2px solid black;
+    padding: 34px;
+    margin: 34px;
+}

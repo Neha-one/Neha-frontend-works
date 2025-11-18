@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1,
+        .div2,
+        .div3 {
+            border: 2px solid black;
+            width: 155px;
+            height: 55px;
+            background-color: aqua;
+            columns: black;
+            margin: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="alert('hello!')">click me!</button>
+    <button class="click">submit</button>
+    <button class="dbclick">doubleclick</button>
+    <div class="div1">OutSide Of Div</div>
+    <div class="div2">Just You! </div>
+    <div class="div3">-EVENT LISTENERS-</div>
+    <script>
+        //onclick property expects a function, not a string.
+        //so 3 simple method to use onclick 
+        // 1.  inline html onclick=""
+        // 2. setAttribute("onclick" , "alert('hello!')")
+        // 3. usign funtion 
+        // document.querySelector(".click").onclick = () => alert("hello");
+
+        //NOTE:- inline handling vs js handling => js priority high.
+
+        document.querySelector(".dbclick").ondblclick = () => {
+            alert('Mani')
+        };
+        document.querySelector(".div1").onmouseover = () => {
+            document.querySelector(".div1").innerHTML = `Inside Of Div and do you know 1+1= ${1 + 1}`;
+        }
+
+        // Something about event :-
+        document.querySelector(".click").onclick = (evt) => {
+            // alert('neha');
+            console.log(evt);
+            console.log(evt.type);   // click  
+            console.log(evt.target);        //  <button class="click">submit</button>
+            console.log(evt.clientX, evt.clientY);   //118 15
+        };
+
+        document.querySelector(".div2").setAttribute("onclick", "alert('why not!')");
+        document.querySelector('.div2').setAttribute("onclick", "document.querySelector('.div2').innerHTML='Why always Me!';document.querySelector('.div2').style.fontWeight='bolder'");
+
+
+
+        //NOTICE:-  WE CAN not use an event multiple times using upper method so we use EVENT LISTENERS;-
+        //like:- add , remove
+
+        //NOTICE:- THE CALLBACK REFERENCE SHOULD BE SAME TO REMOVE.
+        let div_3 = document.querySelector(".div3");
+        //best way to add and remove event :- save fun of event in another variable then use that var for add and remove event.
+        const click3 = () => {
+            console.log("handler 3");
+
+        }
+        div_3.addEventListener("click", () => {
+            console.log("handler 1");
+        });
+        div_3.addEventListener("click", () => {
+            console.log("handler 2");
+        });
+        div_3.addEventListener("click", click3);
+        //remove click 3
+        div_3.removeEventListener("click", click3)
+
+
+
+    </script>
+</body>
+
+</html>
