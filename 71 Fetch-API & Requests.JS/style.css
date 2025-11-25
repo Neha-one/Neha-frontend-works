@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+dd {
+    color: darkgreen;
+    font-size: medium;
+}
+
+dt {
+    color: chocolate;
+    font-size: large;
+}
+
+dl,dd,h2,
+button,
+p {
+    margin: 2rem;
+}
