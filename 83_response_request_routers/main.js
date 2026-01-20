@@ -1,12 +1,12 @@
 const exp = require('express')
 //import blog file
 const blog = require('./routes/blog')
-const shop=require('./routes/shop')
+const shop = require('./routes/shop')
 const app = exp()
 const port = 3000
 
 //syntax to use routes;
-app.use('/shop',shop);
+app.use('/shop', shop);
 app.use('/blog', blog);
 app.use(exp.static('public'))
 

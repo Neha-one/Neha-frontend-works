@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "name": "84_middlewares_in_express_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
