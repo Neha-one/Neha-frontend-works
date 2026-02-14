@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-color: black;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+    color: white;
+}
+
+.left {
+    width: 30%;
+    padding: 12px;
+
+}
+
+.home {
+    padding: 12px;
+    background-color: #1f1f1f;
+    margin-bottom: 11px;
+    border-radius: 7px;
+}
+
+.home .spotifyicon {
+    font-size: 15px;
+}
+
+.home div {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    gap: 5px;
+    padding: 3px;
+}
+
+.library {
+    background-color: #1f1f1f;
+    border-radius: 7px;
+    padding: 12px;
+    height: 80%;
+    position: relative;
+}
+
+.library div {
+    display: flex;
+    /* padding: 3px; */
+    align-items: center;
+}
+
+.library .libraryicon {
+    font-size: 15px;
+    gap: 5px;
+}
+
+.library .footer {
+    position: absolute;
+    bottom: 5px;
+    gap: 2px;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.footer div a {
+    color: grey;
+    text-decoration: none;
+    padding: 0 4px;
+    font-size: 9px;
+
+
+}
+
+.right {
+    width: 70%;
+    padding: 12px 0;
+    height: 100%;
+}
+
+.navbar {
+    padding: 11px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(56, 55, 55, 0.94);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.navbar button {
+    border: none;
+    outline: none;
+    margin: 0 12px;
+}
+
+.navbar .signupbtn {
+    padding: 5px;
+    background-color: rgba(56, 55, 55, 0.94);
+    border-radius: 23px;
+    color: rgb(192, 191, 191);
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    font-size: 14px;
+    color: white;
+}
+
+.navbar .loginbtn {
+    padding: 10px 16px;
+    border-radius: 23px;
+    background-color: white;
+    color: black;
+    margin-right: 33px;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: rgb(18, 18, 18);
+    max-height: 70vh;
+    display: flex;
+    gap: 5px;
+    margin: 22px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+}
+
+.card .cardmember {
+    width: 200px;
+    padding: 10px;
+    background-color: #252525;
+    font-size: 12px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardmember h2,
+.cardmember p {
+    padding-top: 10px;
+
+}
+
+.card .cardmember .songimag {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+}
+
+.cardmember .playbtn {
+    height: 50px;
+    top: 200px;
+    right: 32px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.1s ease-out;
+}
+
+
+.cardmember:hover .playbtn {
+    opacity: 1;
+    top: 150px;
+    cursor: pointer;
+}
+
+.right {
+    position: relative;
+}
+
+.play {
+    position: fixed;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 68%;
+    bottom: 20px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 7px;
+}
+
+.play * {
+    cursor: pointer;
+}
+
+.songlist {
+    display: flex;
+    flex-direction: column;
+    margin: 11px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.songlist ul li {
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 9px;
+    margin: 5px;
+}
+
+.songlist .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.songlist .info div {
+    font-size: 11px;
+}
+
+.songlist .playnow {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.playnow div {
+    font-size: 9px;
+    padding: 5px;
+}
