@@ -2,6 +2,8 @@
 // Select the web_dev_01database to use.
 use('web_dev_01Database');
 
+// db.createCollection("sales")
+
 // Insert a few documents into the courses collection.
 db.getCollection('sales').insertMany([
   {
