@@ -8,7 +8,7 @@
     npm install tailwindcss @tailwindcss/cli 
 ```
 
-## step 02: Import Tailwind in your CSS
+## step 02: Import Tailwind in our CSS
 
 ### Add the @import "tailwindcss"; import to your main CSS file.(src/input.css)
 
