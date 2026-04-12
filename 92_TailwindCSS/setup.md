@@ -1,4 +1,4 @@
-# How to setup Tailwind CSS
+# How to setup Tailwind CSS(v-@4)
 
 ## step 01: Install Tailwind CSS
 
@@ -23,7 +23,10 @@
 ```
    npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
-
+##### NOTE:- i made a tag build in package.json so if i only write in terminal "npm run build" then it runs automatically.
+```
+   build:"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+``` 
 ## step 04:Start using Tailwind in your HTML
 
 ### Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content.(src/index.html)
